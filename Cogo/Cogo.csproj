@@ -89,6 +89,9 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CommentItem.axml" />
     <AndroidResource Include="Resources\layout\LoginPage.axml" />
+    <AndroidResource Include="Resources\layout\RegistrationPage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

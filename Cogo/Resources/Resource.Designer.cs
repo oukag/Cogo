@@ -105,6 +105,9 @@ namespace Cogo
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f07003e
+			public const int BirthDate = 2131165246;
+			
 			// aapt resource value: 0x7f070004
 			public const int Comment = 2131165188;
 			
@@ -138,11 +141,38 @@ namespace Cogo
 			// aapt resource value: 0x7f070022
 			public const int EPTitleTxt = 2131165218;
 			
+			// aapt resource value: 0x7f070037
+			public const int Emailtxt = 2131165239;
+			
 			// aapt resource value: 0x7f070016
 			public const int ForgotPasswordB = 2131165206;
 			
+			// aapt resource value: 0x7f07003d
+			public const int ImageBirthDate = 2131165245;
+			
+			// aapt resource value: 0x7f070036
+			public const int ImageEmail = 2131165238;
+			
+			// aapt resource value: 0x7f070034
+			public const int ImageName = 2131165236;
+			
+			// aapt resource value: 0x7f070038
+			public const int ImagePassword2 = 2131165240;
+			
+			// aapt resource value: 0x7f07003a
+			public const int ImagePassword3 = 2131165242;
+			
+			// aapt resource value: 0x7f070035
+			public const int Nametxt = 2131165237;
+			
 			// aapt resource value: 0x7f070014
 			public const int Passwordtxt = 2131165204;
+			
+			// aapt resource value: 0x7f070039
+			public const int Passwordtxt2 = 2131165241;
+			
+			// aapt resource value: 0x7f07003b
+			public const int Passwordtxt3 = 2131165243;
 			
 			// aapt resource value: 0x7f070001
 			public const int ProfileImage = 2131165185;
@@ -153,8 +183,17 @@ namespace Cogo
 			// aapt resource value: 0x7f07001b
 			public const int SignInB = 2131165211;
 			
+			// aapt resource value: 0x7f07003f
+			public const int SignInB2 = 2131165247;
+			
 			// aapt resource value: 0x7f07001f
 			public const int SignUpB = 2131165215;
+			
+			// aapt resource value: 0x7f070041
+			public const int SignUpB2 = 2131165249;
+			
+			// aapt resource value: 0x7f070032
+			public const int SignUptxt = 2131165234;
 			
 			// aapt resource value: 0x7f070006
 			public const int UpVote = 2131165190;
@@ -198,17 +237,20 @@ namespace Cogo
 			// aapt resource value: 0x7f07001d
 			public const int linearLayout6 = 2131165213;
 			
+			// aapt resource value: 0x7f07003c
+			public const int linearLayout7 = 2131165244;
+			
 			// aapt resource value: 0x7f07002b
 			public const int listView1 = 2131165227;
 			
-			// aapt resource value: 0x7f070031
-			public const int menu_edit = 2131165233;
+			// aapt resource value: 0x7f070042
+			public const int menu_edit = 2131165250;
 			
-			// aapt resource value: 0x7f070033
-			public const int menu_preferences = 2131165235;
+			// aapt resource value: 0x7f070044
+			public const int menu_preferences = 2131165252;
 			
-			// aapt resource value: 0x7f070032
-			public const int menu_save = 2131165234;
+			// aapt resource value: 0x7f070043
+			public const int menu_save = 2131165251;
 			
 			// aapt resource value: 0x7f070030
 			public const int newsDescription = 2131165232;
@@ -227,6 +269,12 @@ namespace Cogo
 			
 			// aapt resource value: 0x7f07000c
 			public const int password = 2131165196;
+			
+			// aapt resource value: 0x7f070033
+			public const int space1 = 2131165235;
+			
+			// aapt resource value: 0x7f070031
+			public const int space2 = 2131165233;
 			
 			// aapt resource value: 0x7f07001c
 			public const int space3 = 2131165212;
@@ -257,6 +305,9 @@ namespace Cogo
 			
 			// aapt resource value: 0x7f07001e
 			public const int txtSignUp = 2131165214;
+			
+			// aapt resource value: 0x7f070040
+			public const int txtSignUp2 = 2131165248;
 			
 			// aapt resource value: 0x7f07000a
 			public const int username = 2131165194;
@@ -296,7 +347,10 @@ namespace Cogo
 			public const int NewsItem = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int toolbar = 2130903047;
+			public const int RegistrationPage = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int toolbar = 2130903048;
 			
 			static Layout()
 			{
