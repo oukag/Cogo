@@ -14,7 +14,7 @@ using Cogo.Adapters;
 
 namespace DesignerWalkthrough
 {
-    [Activity(Label = "Cogo", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Cogo", MainLauncher = true)]
     public class MainActivity : Activity
     {
         EventService eventService;
@@ -26,34 +26,34 @@ namespace DesignerWalkthrough
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.LoginPage);
             listView = FindViewById<ListView>(Resource.Id.listView1);
-            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            SetActionBar(toolbar);
-            ActionBar.Title = "Cogo";
+            //var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            //SetActionBar(toolbar);
+            //ActionBar.Title = "Cogo";
 
             initializeDatabase();
 
-            Comments.Add(new CommentItem()
-            {
-                UserImage = Resource.Drawable.First,
-                UserName = "Samantha Jennings",
-                Comment = "FIRST!"
-            });
-            Comments.Add(new CommentItem()
-            {
-                UserImage = Resource.Drawable.two,
-                UserName = "John Jacobs",
-                Comment = "Excited to take my family to this!"
-            });
-            Comments.Add(new CommentItem()
-            {
-                UserImage = Resource.Drawable.third,
-                UserName = "Amanda Flimmings",
-                Comment = "What a great idea! Can't wait to enjoy the festivities"
-            });
+            //Comments.Add(new CommentItem()
+            //{
+            //    UserImage = Resource.Drawable.First,
+            //    UserName = "Samantha Jennings",
+            //    Comment = "FIRST!"
+            //});
+            //Comments.Add(new CommentItem()
+            //{
+            //    UserImage = Resource.Drawable.two,
+            //    UserName = "John Jacobs",
+            //    Comment = "Excited to take my family to this!"
+            //});
+            //Comments.Add(new CommentItem()
+            //{
+            //    UserImage = Resource.Drawable.third,
+            //    UserName = "Amanda Flimmings",
+            //    Comment = "What a great idea! Can't wait to enjoy the festivities"
+            //});
 
-            listView.Adapter = new CommentAdapter(this, Comments);
+            //listView.Adapter = new CommentAdapter(this, Comments);
         }
 
 
@@ -63,16 +63,16 @@ namespace DesignerWalkthrough
             eventService = new MockEventService(this);
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.toolbarmenu, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
-                ToastLength.Short).Show();
-            return base.OnOptionsItemSelected(item);
-        }
+        //public override bool OnCreateOptionsMenu(IMenu menu)
+        //{
+        //    MenuInflater.Inflate(Resource.Menu.toolbarmenu, menu);
+        //    return base.OnCreateOptionsMenu(menu);
+        //}
+        //public override bool OnOptionsItemSelected(IMenuItem item)
+        //{
+        //    Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
+        //        ToastLength.Short).Show();
+        //    return base.OnOptionsItemSelected(item);
+        //}
     }
 }

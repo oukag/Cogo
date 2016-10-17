@@ -13,12 +13,12 @@
     <item name="android:shadowDy" >1</item>
     <item name="android:shadowRadius" >2</item>
   </style>
-  <style name="themeappheader" parent="@android:style/Theme.Material.Light.DarkActionBar">
+  <style name="ThemeAppHeader" parent="@android:style/Theme.Material.Light.DarkActionBar">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
     <item name="android:colorPrimary">#0CA893</item>
   </style>
-  <style name="logintheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+  <style name="LoginTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
     <item name="android:colorPrimary">#0CA893</item>
