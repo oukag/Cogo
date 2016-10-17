@@ -10,9 +10,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Cogo.src.Services
+namespace Cogo.Services
 {
     class ImportService
     {
+
     }
 }
