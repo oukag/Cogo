@@ -21,9 +21,9 @@ namespace Cogo.Services.Impl
 
         public MockIdGenerator()
         {
-            this.alphanumeric = false;
-            this.lastId = "000000";
-            this.length = 6;
+            alphanumeric = false;
+            lastId = "000000";
+            length = 6;
         }
 
         public string getNextId()
@@ -37,7 +37,7 @@ namespace Cogo.Services.Impl
         {
             String id = "";
             bool increment = true;
-            for (int i = id.Length - 1; i >= 0; i--)
+            for (int i = length - 1; i >= 0; i--)
             {
                 //char c = incrementChar(getLastId()[i]);
                 char c = getLastId()[i];
@@ -174,7 +174,7 @@ namespace Cogo.Services.Impl
 
         public string getLastId()
         {
-            return this.lastId;
+            return lastId;
         }
 
         public void setLastId(string lastId)
@@ -185,7 +185,7 @@ namespace Cogo.Services.Impl
 
         public int getLength()
         {
-            return this.length;
+            return length;
         }
 
         public void setLength(int length)

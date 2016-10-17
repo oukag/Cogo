@@ -22,7 +22,7 @@ namespace Cogo.Models
 
         public EventModel()
         {
-            this.id = "";
+            this.id = null;
             this.name = "";
             this.description = "";
             this.date = new DateTime();

@@ -18,5 +18,7 @@ namespace Cogo.Services
         EventModel getEventForId(string id);
 
         EventModel saveEvent(EventModel e);
+
+        List<EventModel> getEventsForTag(string tag);
     }
 }

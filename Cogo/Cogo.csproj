@@ -59,6 +59,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Services\ReadWriteCsv.cs" />
     <Compile Include="src\Services\EventService.cs" />
     <Compile Include="src\Services\IdGenerator.cs" />
     <Compile Include="src\Services\Impl\MockEventService.cs" />
@@ -68,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Events.csv" />
+    <AndroidAsset Include="Assets\Users.csv" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

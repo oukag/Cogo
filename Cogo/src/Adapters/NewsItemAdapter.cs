@@ -16,7 +16,7 @@ namespace Cogo.Adapters
     class NewsItemAdapter : BaseAdapter
     {
         Activity context;
-        List<NewsItem>
+        //List<NewsItem>
 
         public NewsItemAdapter(Activity context)
         {
@@ -49,9 +49,9 @@ namespace Cogo.Adapters
                 view = context.LayoutInflater.Inflate(Resource.Layout.NewsItem, null);
             }
 
-            view.FindViewById<TextView>(Resource.Id.newsTime) = 
-            view.FindViewById<TextView>(Resource.Id.newsName) = 
-            view.FindViewById<TextView>(Resource.Id.newsDecription) =
+            //view.FindViewById<TextView>(Resource.Id.newsTime) = 
+            //view.FindViewById<TextView>(Resource.Id.newsName) = 
+            //view.FindViewById<TextView>(Resource.Id.newsDecription) =
 
             return view;
         }

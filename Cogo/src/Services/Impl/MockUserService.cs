@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Cogo.Models;
+using Android.Content.Res;
+using ReadWriteCsv;
 
 namespace Cogo.Services.Impl
 {
@@ -18,10 +20,40 @@ namespace Cogo.Services.Impl
         private IdGenerator idGenerator;
         private List<UserModel> users;
 
-        public MockUserService()
+        private static string FILENAME = "Users.csv";
+
+        public MockUserService(Context context)
         {
             idGenerator = new MockIdGenerator();
             users = new List<UserModel>();
+            initialize(context);
+        }
+
+        private void initialize(Context context)
+        {
+            System.Diagnostics.Debug.WriteLine("Initializing Users");
+            AssetManager assets = context.Assets;
+            using (CsvFileReader reader = new CsvFileReader(assets.Open(FILENAME)))
+            {
+                CsvRow row = new CsvRow();
+                CsvRow fields = new CsvRow();
+                reader.ReadRow(fields);
+                foreach (string s in fields)
+                {
+                    System.Diagnostics.Debug.WriteLine(s);
+                }
+                while (reader.ReadRow(row))
+                {
+                    string username = row[0];
+                    string password = row[1];
+
+                    UserModel u = new UserModel();
+                    u.setUsername(username);
+                    u.setPassword(password);
+                    saveUser(u);
+                }
+            }
+            System.Diagnostics.Debug.WriteLine("Loaded {0} users from {1}", users.Count, FILENAME);
         }
 
         public UserModel getUserForId(string id)
