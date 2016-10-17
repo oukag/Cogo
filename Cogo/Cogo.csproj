@@ -51,8 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Adapters\CommentAdapter.cs" />
     <Compile Include="src\Adapters\NewsItemAdapter.cs" />
     <Compile Include="src\Controllers\LoginController.cs" />
+    <Compile Include="src\Models\CommentItem.cs" />
     <Compile Include="src\Models\EventModel.cs" />
     <Compile Include="src\Models\EventTagModel.cs" />
     <Compile Include="src\Models\UserModel.cs" />
@@ -85,6 +87,8 @@
     <AndroidResource Include="Resources\layout\NewsFeed.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\CommentItem.axml" />
+    <AndroidResource Include="Resources\layout\LoginPage.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -108,6 +112,51 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\theme.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\toolbar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Background_Cyan.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_bg_Cyan.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_bg_transparent.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_downvote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_filter_toolbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_upvote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CogoWCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\First.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Password1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\RedButton.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\third.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\UserName1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Menu\toolbarmenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

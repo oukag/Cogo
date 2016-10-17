@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
   <style name="button_text" >
     <item name="android:layout_width" >fill_parent</item>
@@ -13,12 +13,12 @@
     <item name="android:shadowDy" >1</item>
     <item name="android:shadowRadius" >2</item>
   </style>
-  <style name="ThemeAppHeader" parent="@android:style/Theme.Material.Light.DarkActionBar">
+  <style name="themeappheader" parent="@android:style/Theme.Material.Light.DarkActionBar">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
     <item name="android:colorPrimary">#0CA893</item>
   </style>
-  <style name="LoginTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+  <style name="logintheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
     <item name="android:colorPrimary">#0CA893</item>

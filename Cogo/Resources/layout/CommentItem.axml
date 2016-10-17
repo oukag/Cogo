@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/ProfileImage"
+            android:layout_width="60dp"
+            android:layout_height="70dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3">
+            <TextView
+                android:text="UserName"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UserName" />
+            <TextView
+                android:text="Comment"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Comment" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37.0dp"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/button_downvote"
+            android:layout_width="100.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/UpVote" />
+        <ImageButton
+            android:src="@drawable/button_upvote"
+            android:layout_width="93.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/DownVote" />
+        <Button
+            android:text="Reply"
+            android:layout_width="185.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ReplyButton" />
+    </LinearLayout>
+</LinearLayout>
