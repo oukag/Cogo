@@ -67,6 +67,7 @@
     <Compile Include="src\Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Events.csv" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

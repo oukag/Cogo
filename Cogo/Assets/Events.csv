@@ -1,0 +1,3 @@
+name,summary,description,tags,date (MM/dd/yyyy hh:mm a)
+Event 1,Sample Event,Longer description for sample event,"test, sample, mine",10/17/2016 12:00
+Event 2,"Night of ""Fun""",Testing to see what changes in the .CSV file for quotations,"text, sample, fake",10/31/2016
