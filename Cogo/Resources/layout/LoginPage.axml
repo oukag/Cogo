@@ -30,7 +30,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/UserNameTxt"
                 android:hint="UserName"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
@@ -51,7 +52,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/Passwordtxt"
                 android:hint="Password"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -67,7 +69,8 @@
                 android:id="@+id/ForgotPasswordB"
                 android:textAllCaps="false"
                 android:background="@drawable/button_bg_transparent"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -92,7 +95,8 @@
                 android:layout_height="63.0dp"
                 android:id="@+id/SignInB"
                 android:background="@drawable/button_bg_cyan"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="6.5dp"
@@ -118,7 +122,8 @@
                     android:layout_width="50dp"
                     android:layout_height="36.5dp"
                     android:textAllCaps="false"
-                    android:id="@+id/SignUpB" />
+                    android:id="@+id/SignUpB"
+                    android:textColor="#ffffff" />
             </LinearLayout>
             <Space
                 android:layout_width="match_parent"
