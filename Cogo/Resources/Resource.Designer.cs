@@ -72,25 +72,28 @@ namespace Cogo
 			public const int Icon = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int logo = 2130837513;
+			public const int LoginBackground = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int OLDIcon = 2130837514;
+			public const int logo = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int Password1 = 2130837515;
+			public const int OLDIcon = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int RedButton = 2130837516;
+			public const int Password1 = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int third = 2130837517;
+			public const int RedButton = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int two = 2130837518;
+			public const int third = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int UserName1 = 2130837519;
+			public const int two = 2130837519;
+			
+			// aapt resource value: 0x7f020010
+			public const int UserName1 = 2130837520;
 			
 			static Drawable()
 			{

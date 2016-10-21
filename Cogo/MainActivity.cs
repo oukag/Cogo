@@ -26,7 +26,7 @@ namespace DesignerWalkthrough
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.LoginPage);
             listView = FindViewById<ListView>(Resource.Id.listView1);
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetActionBar(toolbar);
