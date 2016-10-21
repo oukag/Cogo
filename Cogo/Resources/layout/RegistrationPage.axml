@@ -130,13 +130,10 @@
                 android:layout_width="61.5dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ImageBirthDate" />
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
+            <DatePicker
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/BirthDate"
-                android:hint="Figure Out Calendar"
-                android:gravity="center_vertical" />
+                android:id="@+id/datePicker1" />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"

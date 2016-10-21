@@ -105,9 +105,6 @@ namespace Cogo
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07003e
-			public const int BirthDate = 2131165246;
-			
 			// aapt resource value: 0x7f070004
 			public const int Comment = 2131165188;
 			
@@ -209,6 +206,9 @@ namespace Cogo
 			
 			// aapt resource value: 0x7f07000e
 			public const int btn_2 = 2131165198;
+			
+			// aapt resource value: 0x7f07003e
+			public const int datePicker1 = 2131165246;
 			
 			// aapt resource value: 0x7f070013
 			public const int imagePassword = 2131165203;
