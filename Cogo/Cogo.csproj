@@ -57,6 +57,7 @@
     <Compile Include="src\Models\CommentItem.cs" />
     <Compile Include="src\Models\EventModel.cs" />
     <Compile Include="src\Models\EventTagModel.cs" />
+    <Compile Include="src\Models\NewsItem.cs" />
     <Compile Include="src\Models\UserModel.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

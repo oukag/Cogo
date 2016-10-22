@@ -22,12 +22,16 @@ namespace DesignerWalkthrough
         List<CommentItem> Comments = new List<CommentItem>();
         ListView listView;
 
+        List<NewsItem> NewsFeed = new List<NewsItem>();
+        ListView NewsListView;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.LoginPage);
             listView = FindViewById<ListView>(Resource.Id.listView1);
+            NewsListView = FindViewById<ListView>(Resource.Id.NewsList);
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetActionBar(toolbar);
             ActionBar.Title = "Cogo";

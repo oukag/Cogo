@@ -165,6 +165,9 @@ namespace Cogo
 			// aapt resource value: 0x7f070035
 			public const int Nametxt = 2131165237;
 			
+			// aapt resource value: 0x7f07002c
+			public const int NewsList = 2131165228;
+			
 			// aapt resource value: 0x7f070014
 			public const int Passwordtxt = 2131165204;
 			
@@ -257,9 +260,6 @@ namespace Cogo
 			
 			// aapt resource value: 0x7f070030
 			public const int newsDescription = 2131165232;
-			
-			// aapt resource value: 0x7f07002c
-			public const int newsFeedList = 2131165228;
 			
 			// aapt resource value: 0x7f07002d
 			public const int newsImage = 2131165229;
