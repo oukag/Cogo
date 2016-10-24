@@ -48,15 +48,27 @@ namespace Cogo.Services.Impl
                 }
                 while (reader.ReadRow(row))
                 {
+                   // Removed parsing to a separate function because it was getting to complex to be mixed into this function
                    saveEvent(parseEvent(row));
                 }
             }
             System.Diagnostics.Debug.WriteLine("Loaded {0} events from {1}", events.Count, FILENAME);
         }
 
+        /**
+         * Creates an eventModel from a CsvRow list of strings. It is assumed that the CsvRow follows the following order:
+         * Title
+         * Date
+         * Location
+         * Summary
+         * Description
+         * Host
+         * Tags
+         * Google Maps Url, if no Url is attached it will place a null value in its place in the EventModel
+         */
         private EventModel parseEvent(CsvRow row)
         {
-            //Event Title,Event Date (MM/dd/yy h:mm a),Location,Event Summary,Event Long Description,Event Company / Host,Event Tags,GoogleMaps URL
+            // Converting the CsvRow list into more readable variable names
             string title       = (row.Count > 0) ? row[0] : null;
             string dateStr     = (row.Count > 1) ? row[1] : null;
             string location    = (row.Count > 2) ? row[2] : null;
@@ -66,8 +78,9 @@ namespace Cogo.Services.Impl
             string tagStr      = (row.Count > 6) ? row[6] : null;
             string mapsUrl     = (row.Count > 7) ? row[7] : null;
             
-
+            // Creating the base event model to store the information
             EventModel e = new Models.EventModel();
+            // Populating the event model with the CSV information
             e.setName(title);
             e.setDescription(summary);
             e.setLocation(location);

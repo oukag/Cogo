@@ -25,6 +25,7 @@ namespace DesignerWalkthrough
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            //Database initialization should occur before view creation, so I moved it to the top.
             initializeDatabase();
 
             SetContentView(Resource.Layout.LoginPage);
