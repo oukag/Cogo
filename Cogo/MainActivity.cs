@@ -25,6 +25,7 @@ namespace DesignerWalkthrough
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            initializeDatabase();
 
             SetContentView(Resource.Layout.LoginPage);
             listView = FindViewById<ListView>(Resource.Id.listView1);
@@ -32,7 +33,6 @@ namespace DesignerWalkthrough
             SetActionBar(toolbar);
             ActionBar.Title = "Cogo";
 
-            initializeDatabase();
 
             Comments.Add(new CommentItem()
             {

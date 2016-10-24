@@ -48,32 +48,44 @@ namespace Cogo.Services.Impl
                 }
                 while (reader.ReadRow(row))
                 {
-                    string name = row[0];
-                    string summary = row[1];
-                    string description = row[2];
-                    List<string> tags = new List<string>();
-                    foreach(string s in row[3].Split(','))
-                    {
-                        if(!tags.Contains(s))
-                        {
-                            tags.Add(s);
-                        }
-                        tags.Add(s);
-                    }
-                    string dateStr = row[4];
-                    DateTime date;
-
-                    DateTime.TryParseExact(dateStr, DATE_PATTERN, null, System.Globalization.DateTimeStyles.None, out date);
-
-                    EventModel e = new EventModel();
-                    e.setName(name);
-                    e.setDescription(description);
-                    e.setDate(date);
-                    e.setTags(tags);
-                    saveEvent(e);
+                   saveEvent(parseEvent(row));
                 }
             }
             System.Diagnostics.Debug.WriteLine("Loaded {0} events from {1}", events.Count, FILENAME);
+        }
+
+        private EventModel parseEvent(CsvRow row)
+        {
+            //Event Title,Event Date (MM/dd/yy h:mm a),Location,Event Summary,Event Long Description,Event Company / Host,Event Tags,GoogleMaps URL
+            string title       = (row.Count > 0) ? row[0] : null;
+            string dateStr     = (row.Count > 1) ? row[1] : null;
+            string location    = (row.Count > 2) ? row[2] : null;
+            string summary     = (row.Count > 3) ? row[3] : null;
+            string description = (row.Count > 4) ? row[4] : null;
+            string company     = (row.Count > 5) ? row[5] : null;
+            string tagStr      = (row.Count > 6) ? row[6] : null;
+            string mapsUrl     = (row.Count > 7) ? row[7] : null;
+            
+
+            EventModel e = new Models.EventModel();
+            e.setName(title);
+            e.setDescription(summary);
+            e.setLocation(location);
+            e.setHost(company);
+            e.setGoogleMapsUrl(mapsUrl);
+
+            DateTime date = new DateTime();
+            DateTime.TryParseExact(dateStr, DATE_PATTERN, null, System.Globalization.DateTimeStyles.None, out date);
+            e.setDate(date);
+
+            List<string> tags = new List<string>();
+            foreach(string s in tagStr.Split(','))
+            {
+                tags.Add(s);
+            }
+            e.setTags(tags);
+
+            return e;
         }
 
         public EventModel getEventForId(string id)
