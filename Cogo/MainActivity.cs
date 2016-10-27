@@ -11,6 +11,7 @@ using Cogo.Services;
 using Cogo.Services.Impl;
 using Cogo.Models;
 using Cogo.Adapters;
+using Cogo.Activities;
 
 namespace DesignerWalkthrough
 {
@@ -34,9 +35,9 @@ namespace DesignerWalkthrough
             SetContentView(Resource.Layout.LoginPage);
             listView = FindViewById<ListView>(Resource.Id.listView1);
             NewsListView = FindViewById<ListView>(Resource.Id.NewsList);
-            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            SetActionBar(toolbar);
-            ActionBar.Title = "Cogo";
+            //var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            //SetActionBar(toolbar);
+            //ActionBar.Title = "Cogo";
 
 
             Comments.Add(new CommentItem()
@@ -58,7 +59,25 @@ namespace DesignerWalkthrough
                 Comment = "What a great idea! Can't wait to enjoy the festivities"
             });
 
-            listView.Adapter = new CommentAdapter(this, Comments);
+            //listView.Adapter = new CommentAdapter(this, Comments);
+            Button SignUpB = FindViewById<Button>(Resource.Id.SignUpB);
+            SignUpB.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(RegistrationAct));
+                StartActivity(intent);
+            };
+            Button SignInB2 = FindViewById<Button>(Resource.Id.SignInB2);
+            SignInB2.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(LoginPageAct));
+                StartActivity(intent);
+            };
+            Button RegisterB = FindViewById<Button>(Resource.Id.RegisterB);
+            RegisterB.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(EventPageAct));
+                StartActivity(intent);
+            };
         }
 
 
@@ -79,5 +98,6 @@ namespace DesignerWalkthrough
                 ToastLength.Short).Show();
             return base.OnOptionsItemSelected(item);
         }
-    }
+      
+}
 }

@@ -51,6 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Activities\EventPageAct.cs" />
+    <Compile Include="src\Activities\LoginPageAct.cs" />
+    <Compile Include="src\Activities\RegistrationAct.cs" />
     <Compile Include="src\Adapters\CommentAdapter.cs" />
     <Compile Include="src\Adapters\NewsItemAdapter.cs" />
     <Compile Include="src\Controllers\LoginController.cs" />

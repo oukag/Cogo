@@ -180,20 +180,20 @@ namespace Cogo
 			// aapt resource value: 0x7f070001
 			public const int ProfileImage = 2131165185;
 			
+			// aapt resource value: 0x7f070040
+			public const int RegisterB = 2131165248;
+			
 			// aapt resource value: 0x7f070008
 			public const int ReplyButton = 2131165192;
 			
 			// aapt resource value: 0x7f07001b
 			public const int SignInB = 2131165211;
 			
-			// aapt resource value: 0x7f070040
-			public const int SignInB2 = 2131165248;
+			// aapt resource value: 0x7f070042
+			public const int SignInB2 = 2131165250;
 			
 			// aapt resource value: 0x7f07001f
 			public const int SignUpB = 2131165215;
-			
-			// aapt resource value: 0x7f070042
-			public const int SignUpB2 = 2131165250;
 			
 			// aapt resource value: 0x7f070033
 			public const int SignUptxt = 2131165235;
@@ -309,11 +309,11 @@ namespace Cogo
 			// aapt resource value: 0x7f070021
 			public const int toolbar = 2131165217;
 			
+			// aapt resource value: 0x7f070041
+			public const int txtSignIn2 = 2131165249;
+			
 			// aapt resource value: 0x7f07001e
 			public const int txtSignUp = 2131165214;
-			
-			// aapt resource value: 0x7f070041
-			public const int txtSignUp2 = 2131165249;
 			
 			// aapt resource value: 0x7f07000a
 			public const int username = 2131165194;
