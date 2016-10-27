@@ -66,18 +66,8 @@ namespace DesignerWalkthrough
                 var intent = new Intent(this, typeof(RegistrationAct));
                 StartActivity(intent);
             };
-            Button SignInB2 = FindViewById<Button>(Resource.Id.SignInB2);
-            SignInB2.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(LoginPageAct));
-                StartActivity(intent);
-            };
-            Button RegisterB = FindViewById<Button>(Resource.Id.RegisterB);
-            RegisterB.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(EventPageAct));
-                StartActivity(intent);
-            };
+
+
         }
 
 

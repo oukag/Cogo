@@ -34,13 +34,13 @@
                 android:layout_width="61.5dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ImageName" />
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/Nametxt"
+                android:id="@+id/NameTxt"
                 android:hint="Name"
-                android:gravity="center_vertical" />
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
@@ -58,13 +58,13 @@
                 android:layout_width="61.5dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ImageEmail" />
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/Emailtxt"
+                android:id="@+id/EmailTxt"
                 android:hint="Email"
-                android:gravity="center_vertical" />
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
@@ -82,13 +82,13 @@
                 android:layout_width="61.5dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ImagePassword2" />
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/Passwordtxt2"
+                android:id="@+id/PasswordTxt2"
                 android:hint="Password"
-                android:gravity="center_vertical" />
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
@@ -106,13 +106,13 @@
                 android:layout_width="61.5dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ImagePassword3" />
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/Passwordtxt3"
-                android:hint="Re-Enter Password"
-                android:gravity="center_vertical" />
+                android:id="@+id/PasswordTxt3"
+                android:hint="Re-Password"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"

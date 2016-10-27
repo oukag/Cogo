@@ -142,7 +142,7 @@ namespace Cogo
 			public const int EPTitleTxt = 2131165218;
 			
 			// aapt resource value: 0x7f070038
-			public const int Emailtxt = 2131165240;
+			public const int EmailTxt = 2131165240;
 			
 			// aapt resource value: 0x7f070016
 			public const int ForgotPasswordB = 2131165206;
@@ -163,19 +163,19 @@ namespace Cogo
 			public const int ImagePassword3 = 2131165243;
 			
 			// aapt resource value: 0x7f070036
-			public const int Nametxt = 2131165238;
+			public const int NameTxt = 2131165238;
 			
 			// aapt resource value: 0x7f07002d
 			public const int NewsList = 2131165229;
 			
-			// aapt resource value: 0x7f070014
-			public const int Passwordtxt = 2131165204;
-			
 			// aapt resource value: 0x7f07003a
-			public const int Passwordtxt2 = 2131165242;
+			public const int PasswordTxt2 = 2131165242;
 			
 			// aapt resource value: 0x7f07003c
-			public const int Passwordtxt3 = 2131165244;
+			public const int PasswordTxt3 = 2131165244;
+			
+			// aapt resource value: 0x7f070014
+			public const int Passwordtxt = 2131165204;
 			
 			// aapt resource value: 0x7f070001
 			public const int ProfileImage = 2131165185;
