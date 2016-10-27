@@ -19,6 +19,9 @@ namespace Cogo.Models
         private string description;
         private DateTime date;
         private List<string> tags;
+        private string host;
+        private string location;
+        private string gmUrl;
 
         public EventModel()
         {
@@ -27,6 +30,9 @@ namespace Cogo.Models
             this.description = "";
             this.date = new DateTime();
             this.tags = new List<string>();
+            this.host = "";
+            this.location = "";
+            this.gmUrl = "";
         }
 
         public String getId()
@@ -77,6 +83,36 @@ namespace Cogo.Models
         public void setTags(List<string> tags)
         {
             this.tags = tags;
+        }
+
+        public string getHost()
+        {
+            return this.host;
+        }
+
+        public void setHost(string host)
+        {
+            this.host = host;
+        }
+
+        public string getLocation()
+        {
+            return this.location;
+        }
+
+        public void setLocation(string location)
+        {
+            this.location = location;
+        }
+
+        public string getGoogleMapsUrl()
+        {
+            return this.gmUrl;
+        }
+
+        public void setGoogleMapsUrl(string gmUrl)
+        {
+            this.gmUrl = gmUrl;
         }
     }
 }

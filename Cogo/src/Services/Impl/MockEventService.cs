@@ -48,32 +48,57 @@ namespace Cogo.Services.Impl
                 }
                 while (reader.ReadRow(row))
                 {
-                    string name = row[0];
-                    string summary = row[1];
-                    string description = row[2];
-                    List<string> tags = new List<string>();
-                    foreach(string s in row[3].Split(','))
-                    {
-                        if(!tags.Contains(s))
-                        {
-                            tags.Add(s);
-                        }
-                        tags.Add(s);
-                    }
-                    string dateStr = row[4];
-                    DateTime date;
-
-                    DateTime.TryParseExact(dateStr, DATE_PATTERN, null, System.Globalization.DateTimeStyles.None, out date);
-
-                    EventModel e = new EventModel();
-                    e.setName(name);
-                    e.setDescription(description);
-                    e.setDate(date);
-                    e.setTags(tags);
-                    saveEvent(e);
+                   // Removed parsing to a separate function because it was getting to complex to be mixed into this function
+                   saveEvent(parseEvent(row));
                 }
             }
             System.Diagnostics.Debug.WriteLine("Loaded {0} events from {1}", events.Count, FILENAME);
+        }
+
+        /**
+         * Creates an eventModel from a CsvRow list of strings. It is assumed that the CsvRow follows the following order:
+         * Title
+         * Date
+         * Location
+         * Summary
+         * Description
+         * Host
+         * Tags
+         * Google Maps Url, if no Url is attached it will place a null value in its place in the EventModel
+         */
+        private EventModel parseEvent(CsvRow row)
+        {
+            // Converting the CsvRow list into more readable variable names
+            string title       = (row.Count > 0) ? row[0] : null;
+            string dateStr     = (row.Count > 1) ? row[1] : null;
+            string location    = (row.Count > 2) ? row[2] : null;
+            string summary     = (row.Count > 3) ? row[3] : null;
+            string description = (row.Count > 4) ? row[4] : null;
+            string company     = (row.Count > 5) ? row[5] : null;
+            string tagStr      = (row.Count > 6) ? row[6] : null;
+            string mapsUrl     = (row.Count > 7) ? row[7] : null;
+            
+            // Creating the base event model to store the information
+            EventModel e = new Models.EventModel();
+            // Populating the event model with the CSV information
+            e.setName(title);
+            e.setDescription(summary);
+            e.setLocation(location);
+            e.setHost(company);
+            e.setGoogleMapsUrl(mapsUrl);
+
+            DateTime date = new DateTime();
+            DateTime.TryParseExact(dateStr, DATE_PATTERN, null, System.Globalization.DateTimeStyles.None, out date);
+            e.setDate(date);
+
+            List<string> tags = new List<string>();
+            foreach(string s in tagStr.Split(','))
+            {
+                tags.Add(s);
+            }
+            e.setTags(tags);
+
+            return e;
         }
 
         public EventModel getEventForId(string id)
