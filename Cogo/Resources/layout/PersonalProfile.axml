@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150.0dp"
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/first">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25.0dp"
+            android:id="@+id/linearLayout2"
+            android:layout_gravity="center"
+            android:layout_marginTop="125dp">
+            <TextView
+                android:text="#ProfileName#"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="248.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ProfileTxt" />
+            <Button
+                android:text="+Add Friend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ProfileAddFriendB"
+                android:background="@drawable/button_bg_transparent"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+    <ExpandableListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="269.5dp"
+        android:id="@+id/ProfileExpandableList" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/UpcomingEventsList" />
+</LinearLayout>

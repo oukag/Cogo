@@ -97,6 +97,15 @@
     <AndroidResource Include="Resources\layout\RegistrationPage.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\PersonalProfile.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ProfileUpcoming.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ProfileAllEvents.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

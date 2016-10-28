@@ -145,7 +145,8 @@
             android:layout_height="63.0dp"
             android:id="@+id/RegisterB"
             android:background="@drawable/button_bg_cyan"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="6.5dp"
@@ -171,7 +172,8 @@
                 android:layout_width="50dp"
                 android:layout_height="36.5dp"
                 android:textAllCaps="false"
-                android:id="@+id/SignInB2" />
+                android:id="@+id/SignInB2"
+                android:textColor="#ffffff" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

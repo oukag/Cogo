@@ -32,12 +32,12 @@ namespace DesignerWalkthrough
             //Database initialization should occur before view creation, so I moved it to the top.
             initializeDatabase();
 
-            SetContentView(Resource.Layout.LoginPage);
+            SetContentView(Resource.Layout.PersonalProfile);
             listView = FindViewById<ListView>(Resource.Id.listView1);
             NewsListView = FindViewById<ListView>(Resource.Id.NewsList);
-            //var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            //SetActionBar(toolbar);
-            //ActionBar.Title = "Cogo";
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(toolbar);
+            ActionBar.Title = "Cogo";
 
 
             Comments.Add(new CommentItem()
@@ -59,13 +59,13 @@ namespace DesignerWalkthrough
                 Comment = "What a great idea! Can't wait to enjoy the festivities"
             });
 
-            //listView.Adapter = new CommentAdapter(this, Comments);
-            Button SignUpB = FindViewById<Button>(Resource.Id.SignUpB);
-            SignUpB.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(RegistrationAct));
-                StartActivity(intent);
-            };
+            ////listView.Adapter = new CommentAdapter(this, Comments);
+            //Button SignUpB = FindViewById<Button>(Resource.Id.SignUpB);
+            //SignUpB.Click += (sender, e) =>
+            //{
+            //    var intent = new Intent(this, typeof(RegistrationAct));
+            //    StartActivity(intent);
+            //};
 
 
         }
