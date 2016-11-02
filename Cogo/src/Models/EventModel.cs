@@ -22,6 +22,7 @@ namespace Cogo.Models
         private string host;
         private string location;
         private string gmUrl;
+        private List<CommentItem> comments;
 
         public EventModel()
         {
@@ -33,6 +34,7 @@ namespace Cogo.Models
             this.host = "";
             this.location = "";
             this.gmUrl = "";
+            this.comments = new List<CommentItem>();
         }
 
         public String getId()
@@ -113,6 +115,16 @@ namespace Cogo.Models
         public void setGoogleMapsUrl(string gmUrl)
         {
             this.gmUrl = gmUrl;
+        }
+
+        public List<CommentItem> getComments()
+        {
+            return this.comments;
+        }
+
+        public void setComments(List<CommentItem> comments)
+        {
+            this.comments = comments;
         }
     }
 }

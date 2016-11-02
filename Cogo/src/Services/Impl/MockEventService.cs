@@ -167,5 +167,21 @@ namespace Cogo.Services.Impl
             }
             return result;
         }
+
+        public EventModel addCommentToEvent(EventModel e, CommentItem c)
+        {
+            List<CommentItem> comments = e.getComments();
+            comments.Add(c);
+            e.setComments(comments);
+            saveEvent(e);
+            return e;
+        }
+
+        public EventModel editCommentToEvent(EventModel e, CommentItem c)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }
